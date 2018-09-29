@@ -351,6 +351,8 @@
             this.label6.Size = new System.Drawing.Size(62, 17);
             this.label6.TabIndex = 17;
             this.label6.Text = "Strength";
+            this.toolTip1.SetToolTip(this.label6, "A measure of the sheer physical force a character is capable of exerting upon the" +
+        " environment.");
             // 
             // label7
             // 
