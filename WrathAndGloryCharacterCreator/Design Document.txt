@@ -1,0 +1,21 @@
+I want to make a Human Ministorum Priest.
+My speed will be 6. 
+I will have a maximum base attribute of 4.
+I will have a skill maximum of 4. 
+I will have at most 1 talent. 
+I will have at most 3 psychic powers.
+I must have a Willpower of at least 3.
+I must have a skill of Scholar (1).
+My Influence bonus is +1. 
+I will have keywords:
+Imperium
+Adeptus Ministorum
+I will have the benefit:
+Fiery Invective: Once per combat, the Ministorum priest mauy take a free action to preach the Imperial Creed. The character and all allies with the Imperium Keyword within hearing range heal 1d3 + Rank Shock.
+I will add Wargear:
+Laspistol, Rosarius, knife, Ministorum robes, missionary kit.
+I want to purchase attributes.
+I want to purchase skills.
+I want to purchase talents.
+I want to select wargear.
+I will not exceed 100 build points. 
