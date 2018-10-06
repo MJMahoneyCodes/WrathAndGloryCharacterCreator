@@ -55,6 +55,36 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.rtbValidation = new System.Windows.Forms.RichTextBox();
+            this.lblKeywords = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.txtDefense = new System.Windows.Forms.TextBox();
+            this.txtResilience = new System.Windows.Forms.TextBox();
+            this.txtSoak = new System.Windows.Forms.TextBox();
+            this.txtShock = new System.Windows.Forms.TextBox();
+            this.txtSpeed = new System.Windows.Forms.TextBox();
+            this.txtWounds = new System.Windows.Forms.TextBox();
+            this.txtPassiveAwareness = new System.Windows.Forms.TextBox();
+            this.txtCorruption = new System.Windows.Forms.TextBox();
+            this.txtConviction = new System.Windows.Forms.TextBox();
+            this.txtWealth = new System.Windows.Forms.TextBox();
+            this.txtInfluence = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txtResolve = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.nudStrength)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudAgility)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudToughness)).BeginInit();
@@ -167,6 +197,7 @@
             this.cmbArchetype.Name = "cmbArchetype";
             this.cmbArchetype.Size = new System.Drawing.Size(154, 24);
             this.cmbArchetype.TabIndex = 9;
+            this.cmbArchetype.SelectedIndexChanged += new System.EventHandler(this.cmbArchetype_SelectedIndexChanged);
             // 
             // nudStrength
             // 
@@ -184,8 +215,6 @@
             this.nudStrength.Name = "nudStrength";
             this.nudStrength.Size = new System.Drawing.Size(55, 22);
             this.nudStrength.TabIndex = 10;
-            this.toolTip1.SetToolTip(this.nudStrength, "Relative Human Values:\r\n1-2: Poor\r\n3: Average\r\n4-5: High Average\r\n6-7: Outstandin" +
-        "g\r\n8: Exceptional\r\n9+: Superhuman");
             this.nudStrength.Value = new decimal(new int[] {
             1,
             0,
@@ -209,8 +238,6 @@
             this.nudAgility.Name = "nudAgility";
             this.nudAgility.Size = new System.Drawing.Size(55, 22);
             this.nudAgility.TabIndex = 11;
-            this.toolTip1.SetToolTip(this.nudAgility, "Relative Human Values:\r\n1-2: Poor\r\n3: Average\r\n4-5: High Average\r\n6-7: Outstandin" +
-        "g\r\n8: Exceptional\r\n9+: Superhuman\r\n");
             this.nudAgility.Value = new decimal(new int[] {
             1,
             0,
@@ -234,8 +261,6 @@
             this.nudToughness.Name = "nudToughness";
             this.nudToughness.Size = new System.Drawing.Size(55, 22);
             this.nudToughness.TabIndex = 12;
-            this.toolTip1.SetToolTip(this.nudToughness, "Relative Human Values:\r\n1-2: Poor\r\n3: Average\r\n4-5: High Average\r\n6-7: Outstandin" +
-        "g\r\n8: Exceptional\r\n9+: Superhuman\r\n");
             this.nudToughness.Value = new decimal(new int[] {
             1,
             0,
@@ -259,8 +284,6 @@
             this.nudIntellect.Name = "nudIntellect";
             this.nudIntellect.Size = new System.Drawing.Size(55, 22);
             this.nudIntellect.TabIndex = 13;
-            this.toolTip1.SetToolTip(this.nudIntellect, "Relative Human Values:\r\n1-2: Poor\r\n3: Average\r\n4-5: High Average\r\n6-7: Outstandin" +
-        "g\r\n8: Exceptional\r\n9+: Superhuman\r\n");
             this.nudIntellect.Value = new decimal(new int[] {
             1,
             0,
@@ -284,8 +307,6 @@
             this.nudWillpower.Name = "nudWillpower";
             this.nudWillpower.Size = new System.Drawing.Size(55, 22);
             this.nudWillpower.TabIndex = 14;
-            this.toolTip1.SetToolTip(this.nudWillpower, "Relative Human Values:\r\n1-2: Poor\r\n3: Average\r\n4-5: High Average\r\n6-7: Outstandin" +
-        "g\r\n8: Exceptional\r\n9+: Superhuman\r\n");
             this.nudWillpower.Value = new decimal(new int[] {
             1,
             0,
@@ -309,8 +330,6 @@
             this.nudFellowship.Name = "nudFellowship";
             this.nudFellowship.Size = new System.Drawing.Size(55, 22);
             this.nudFellowship.TabIndex = 15;
-            this.toolTip1.SetToolTip(this.nudFellowship, "Relative Human Values:\r\n1-2: Poor\r\n3: Average\r\n4-5: High Average\r\n6-7: Outstandin" +
-        "g\r\n8: Exceptional\r\n9+: Superhuman\r\n");
             this.nudFellowship.Value = new decimal(new int[] {
             1,
             0,
@@ -334,8 +353,6 @@
             this.nudInitiative.Name = "nudInitiative";
             this.nudInitiative.Size = new System.Drawing.Size(55, 22);
             this.nudInitiative.TabIndex = 16;
-            this.toolTip1.SetToolTip(this.nudInitiative, "Relative Human Values:\r\n1-2: Poor\r\n3: Average\r\n4-5: High Average\r\n6-7: Outstandin" +
-        "g\r\n8: Exceptional\r\n9+: Superhuman\r\n");
             this.nudInitiative.Value = new decimal(new int[] {
             1,
             0,
@@ -351,8 +368,6 @@
             this.label6.Size = new System.Drawing.Size(62, 17);
             this.label6.TabIndex = 17;
             this.label6.Text = "Strength";
-            this.toolTip1.SetToolTip(this.label6, "A measure of the sheer physical force a character is capable of exerting upon the" +
-        " environment.");
             // 
             // label7
             // 
@@ -416,11 +431,313 @@
             this.rtbValidation.TabIndex = 24;
             this.rtbValidation.Text = "Validation rules will appear here.";
             // 
+            // lblKeywords
+            // 
+            this.lblKeywords.AutoSize = true;
+            this.lblKeywords.Location = new System.Drawing.Point(366, 470);
+            this.lblKeywords.Name = "lblKeywords";
+            this.lblKeywords.Size = new System.Drawing.Size(0, 17);
+            this.lblKeywords.TabIndex = 27;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(366, 453);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(73, 17);
+            this.label14.TabIndex = 28;
+            this.label14.Text = "Keywords:";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(193, 390);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(60, 17);
+            this.label15.TabIndex = 34;
+            this.label15.Text = "Wounds";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(193, 362);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(49, 17);
+            this.label16.TabIndex = 33;
+            this.label16.Text = "Speed";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(193, 334);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(47, 17);
+            this.label17.TabIndex = 32;
+            this.label17.Text = "Shock";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(193, 306);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(40, 17);
+            this.label18.TabIndex = 31;
+            this.label18.Text = "Soak";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(193, 278);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(73, 17);
+            this.label19.TabIndex = 30;
+            this.label19.Text = "Resilience";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(193, 250);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(61, 17);
+            this.label20.TabIndex = 29;
+            this.label20.Text = "Defense";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(304, 362);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(59, 17);
+            this.label21.TabIndex = 38;
+            this.label21.Text = "Resolve";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(304, 306);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(57, 17);
+            this.label22.TabIndex = 37;
+            this.label22.Text = "Passive";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(304, 278);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(74, 17);
+            this.label23.TabIndex = 36;
+            this.label23.Text = "Corruption";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(304, 250);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(73, 17);
+            this.label24.TabIndex = 35;
+            this.label24.Text = "Conviction";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(412, 278);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(52, 17);
+            this.label25.TabIndex = 40;
+            this.label25.Text = "Wealth";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(412, 250);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(65, 17);
+            this.label26.TabIndex = 39;
+            this.label26.Text = "Influence";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Location = new System.Drawing.Point(193, 233);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(56, 17);
+            this.label27.TabIndex = 41;
+            this.label27.Text = "Combat";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Location = new System.Drawing.Point(304, 233);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(50, 17);
+            this.label28.TabIndex = 42;
+            this.label28.Text = "Mental";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Location = new System.Drawing.Point(412, 233);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(46, 17);
+            this.label29.TabIndex = 43;
+            this.label29.Text = "Social";
+            // 
+            // txtDefense
+            // 
+            this.txtDefense.Location = new System.Drawing.Point(274, 250);
+            this.txtDefense.Name = "txtDefense";
+            this.txtDefense.ReadOnly = true;
+            this.txtDefense.Size = new System.Drawing.Size(24, 22);
+            this.txtDefense.TabIndex = 44;
+            this.txtDefense.Text = "1";
+            // 
+            // txtResilience
+            // 
+            this.txtResilience.Location = new System.Drawing.Point(274, 278);
+            this.txtResilience.Name = "txtResilience";
+            this.txtResilience.ReadOnly = true;
+            this.txtResilience.Size = new System.Drawing.Size(24, 22);
+            this.txtResilience.TabIndex = 45;
+            this.txtResilience.Text = "1";
+            // 
+            // txtSoak
+            // 
+            this.txtSoak.Location = new System.Drawing.Point(274, 306);
+            this.txtSoak.Name = "txtSoak";
+            this.txtSoak.ReadOnly = true;
+            this.txtSoak.Size = new System.Drawing.Size(24, 22);
+            this.txtSoak.TabIndex = 46;
+            this.txtSoak.Text = "1";
+            // 
+            // txtShock
+            // 
+            this.txtShock.Location = new System.Drawing.Point(274, 334);
+            this.txtShock.Name = "txtShock";
+            this.txtShock.ReadOnly = true;
+            this.txtShock.Size = new System.Drawing.Size(24, 22);
+            this.txtShock.TabIndex = 47;
+            this.txtShock.Text = "1";
+            // 
+            // txtSpeed
+            // 
+            this.txtSpeed.Location = new System.Drawing.Point(274, 362);
+            this.txtSpeed.Name = "txtSpeed";
+            this.txtSpeed.ReadOnly = true;
+            this.txtSpeed.Size = new System.Drawing.Size(24, 22);
+            this.txtSpeed.TabIndex = 48;
+            this.txtSpeed.Text = "1";
+            // 
+            // txtWounds
+            // 
+            this.txtWounds.Location = new System.Drawing.Point(274, 390);
+            this.txtWounds.Name = "txtWounds";
+            this.txtWounds.ReadOnly = true;
+            this.txtWounds.Size = new System.Drawing.Size(24, 22);
+            this.txtWounds.TabIndex = 49;
+            this.txtWounds.Text = "1";
+            // 
+            // txtPassiveAwareness
+            // 
+            this.txtPassiveAwareness.Location = new System.Drawing.Point(382, 313);
+            this.txtPassiveAwareness.Name = "txtPassiveAwareness";
+            this.txtPassiveAwareness.ReadOnly = true;
+            this.txtPassiveAwareness.Size = new System.Drawing.Size(24, 22);
+            this.txtPassiveAwareness.TabIndex = 52;
+            this.txtPassiveAwareness.Text = "1";
+            // 
+            // txtCorruption
+            // 
+            this.txtCorruption.Location = new System.Drawing.Point(382, 278);
+            this.txtCorruption.Name = "txtCorruption";
+            this.txtCorruption.ReadOnly = true;
+            this.txtCorruption.Size = new System.Drawing.Size(24, 22);
+            this.txtCorruption.TabIndex = 51;
+            this.txtCorruption.Text = "1";
+            // 
+            // txtConviction
+            // 
+            this.txtConviction.Location = new System.Drawing.Point(382, 250);
+            this.txtConviction.Name = "txtConviction";
+            this.txtConviction.ReadOnly = true;
+            this.txtConviction.Size = new System.Drawing.Size(24, 22);
+            this.txtConviction.TabIndex = 50;
+            this.txtConviction.Text = "1";
+            // 
+            // txtWealth
+            // 
+            this.txtWealth.Location = new System.Drawing.Point(480, 278);
+            this.txtWealth.Name = "txtWealth";
+            this.txtWealth.ReadOnly = true;
+            this.txtWealth.Size = new System.Drawing.Size(24, 22);
+            this.txtWealth.TabIndex = 54;
+            this.txtWealth.Text = "1";
+            // 
+            // txtInfluence
+            // 
+            this.txtInfluence.Location = new System.Drawing.Point(480, 250);
+            this.txtInfluence.Name = "txtInfluence";
+            this.txtInfluence.ReadOnly = true;
+            this.txtInfluence.Size = new System.Drawing.Size(24, 22);
+            this.txtInfluence.TabIndex = 53;
+            this.txtInfluence.Text = "1";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(304, 323);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(77, 17);
+            this.label13.TabIndex = 55;
+            this.label13.Text = "Awareness";
+            // 
+            // txtResolve
+            // 
+            this.txtResolve.Location = new System.Drawing.Point(382, 362);
+            this.txtResolve.Name = "txtResolve";
+            this.txtResolve.ReadOnly = true;
+            this.txtResolve.Size = new System.Drawing.Size(24, 22);
+            this.txtResolve.TabIndex = 56;
+            this.txtResolve.Text = "1";
+            // 
             // WnGMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(782, 553);
+            this.Controls.Add(this.txtResolve);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.txtWealth);
+            this.Controls.Add(this.txtInfluence);
+            this.Controls.Add(this.txtPassiveAwareness);
+            this.Controls.Add(this.txtCorruption);
+            this.Controls.Add(this.txtConviction);
+            this.Controls.Add(this.txtWounds);
+            this.Controls.Add(this.txtSpeed);
+            this.Controls.Add(this.txtShock);
+            this.Controls.Add(this.txtSoak);
+            this.Controls.Add(this.txtResilience);
+            this.Controls.Add(this.txtDefense);
+            this.Controls.Add(this.label29);
+            this.Controls.Add(this.label28);
+            this.Controls.Add(this.label27);
+            this.Controls.Add(this.label25);
+            this.Controls.Add(this.label26);
+            this.Controls.Add(this.label21);
+            this.Controls.Add(this.label22);
+            this.Controls.Add(this.label23);
+            this.Controls.Add(this.label24);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.label18);
+            this.Controls.Add(this.label19);
+            this.Controls.Add(this.label20);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.lblKeywords);
             this.Controls.Add(this.rtbValidation);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
@@ -488,6 +805,36 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.RichTextBox rtbValidation;
+        private System.Windows.Forms.Label lblKeywords;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.TextBox txtDefense;
+        private System.Windows.Forms.TextBox txtResilience;
+        private System.Windows.Forms.TextBox txtSoak;
+        private System.Windows.Forms.TextBox txtShock;
+        private System.Windows.Forms.TextBox txtSpeed;
+        private System.Windows.Forms.TextBox txtWounds;
+        private System.Windows.Forms.TextBox txtPassiveAwareness;
+        private System.Windows.Forms.TextBox txtCorruption;
+        private System.Windows.Forms.TextBox txtConviction;
+        private System.Windows.Forms.TextBox txtWealth;
+        private System.Windows.Forms.TextBox txtInfluence;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox txtResolve;
     }
 }
 

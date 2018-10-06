@@ -24,6 +24,7 @@ namespace WrathAndGloryCharacterCreator
         int buildPointsFromInitiative = 0;
 
         List<string> validationRules = new List<string>();
+        List<string> keywords = new List<string>();
 
         string tooManyBuildPoints = "";
 
@@ -80,6 +81,13 @@ namespace WrathAndGloryCharacterCreator
             nudWillpower.Maximum = maximum;
         }
 
+        //should be called when tier, species, archetype, etc. are changed
+        private void UpdateTraits()
+        {
+            txtDefense.Text = Math.Max(nudInitiative.Value - 1,1).ToString();
+            
+        }
+
         private void CalculateBuildPoints()
         {
             currentBuildPoints = buildPointsFromSpecies + 
@@ -101,25 +109,32 @@ namespace WrathAndGloryCharacterCreator
             {
                 case "Human":
                     buildPointsFromSpecies = 0;
+                    txtSpeed.Text = "6";
                     break;
                 case "Eldar":
                     buildPointsFromSpecies = 10;
+                    txtSpeed.Text = "8";
                     break;
                 case "Ork":
                     buildPointsFromSpecies = 10;
+                    txtSpeed.Text = "6";
                     break;
                 case "Adeptus Astartes":
                     buildPointsFromSpecies = 50;
+                    txtSpeed.Text = "7";
                     break;
                 case "Primaris Astartes":
                     buildPointsFromSpecies = 100;
+                    txtSpeed.Text = "7";
                     break;
                 default:
                     buildPointsFromSpecies = 0;
                     break;
             }
 
+            UpdateTraits();
             CalculateBuildPoints();
+            ValidateBuildPoints();
         }
 
         private void CalculateAttributeCost(NumericUpDown attribute)
@@ -474,42 +489,49 @@ namespace WrathAndGloryCharacterCreator
         {
             CalculateAttributeCost(nudStrength);
             ValidateBuildPoints();
+            UpdateTraits();
         }
 
         private void nudAgility_ValueChanged(object sender, EventArgs e)
         {
             CalculateAttributeCost(nudAgility);
             ValidateBuildPoints();
+            UpdateTraits();
         }
 
         private void nudToughness_ValueChanged(object sender, EventArgs e)
         {
             CalculateAttributeCost(nudToughness);
             ValidateBuildPoints();
+            UpdateTraits();
         }
 
         private void nudIntellect_ValueChanged(object sender, EventArgs e)
         {
             CalculateAttributeCost(nudIntellect);
             ValidateBuildPoints();
+            UpdateTraits();
         }
 
         private void nudWillpower_ValueChanged(object sender, EventArgs e)
         {
             CalculateAttributeCost(nudWillpower);
             ValidateBuildPoints();
+            UpdateTraits();
         }
 
         private void nudFellowship_ValueChanged(object sender, EventArgs e)
         {
             CalculateAttributeCost(nudFellowship);
             ValidateBuildPoints();
+            UpdateTraits();
         }
 
         private void nudInitiative_ValueChanged(object sender, EventArgs e)
         {
             CalculateAttributeCost(nudInitiative);
             ValidateBuildPoints();
+            UpdateTraits();
         }
 
         private void ValidateBuildPoints()
@@ -520,19 +542,46 @@ namespace WrathAndGloryCharacterCreator
                 validationRules.Add(tooManyBuildPoints);
                 AddTexttoValidationBox();
             }
-            if(currentBuildPoints < availableBuildPoints && validationRules.Contains(tooManyBuildPoints))
+            if(currentBuildPoints <= availableBuildPoints && validationRules.Contains(tooManyBuildPoints))
             {
                 validationRules.Remove(tooManyBuildPoints);
                 AddTexttoValidationBox();
             }
         }
 
+        //adds the default text, or other validation rules (such as too many build points) to the validation rules
+        //rich text box
         private void AddTexttoValidationBox()
         {
-            rtbValidation.Text = "Validation rules will appear here.";
-            for (int i = 0; i < validationRules.Count; i++)
+            if(validationRules.Count() == 0)
             {
-                rtbValidation.Text = validationRules[i].ToString();
+                rtbValidation.Text = "Validation rules will appear here.";
+            }
+            else
+            {
+                rtbValidation.Text = String.Join(", ", validationRules.ToArray());
+            }  
+        }
+
+        private void cmbArchetype_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            keywords.Clear();
+            string selectedArchetype = cmbArchetype.SelectedItem.ToString();
+            switch (selectedArchetype)
+            {
+                case "Ministorum Priest":
+                    keywords.Add("Imperium");
+                    keywords.Add("Adeptus Ministorum");
+                    break;
+
+                default:
+                    break;
+            }
+
+            lblKeywords.Text = "";
+            for (int i = 0; i < keywords.Count(); i++)
+            {
+                lblKeywords.Text = String.Join(", ", keywords.ToArray());
             }
         }
     }

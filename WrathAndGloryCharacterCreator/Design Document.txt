@@ -1,6 +1,6 @@
 I want to make a Human Ministorum Priest.
-My speed will be 6. 
-I will have a maximum base attribute of 4.
+--My speed will be 6. 
+--I will have a maximum base attribute of 4.
 I will have a skill maximum of 4. 
 I will have at most 1 talent. 
 I will have at most 3 psychic powers.
