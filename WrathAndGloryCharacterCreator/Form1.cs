@@ -31,7 +31,9 @@ namespace WrathAndGloryCharacterCreator
         public WnGMainForm()
         {
             InitializeComponent();
-                        
+            lstChooseTier.SelectedIndex = 0;
+            cmbSpecies.SelectedIndex = 0;
+            cmbArchetype.SelectedIndex = 0;
         }
 
         private void lstChooseTier_SelectedIndexChanged(object sender, EventArgs e)
@@ -42,27 +44,27 @@ namespace WrathAndGloryCharacterCreator
                 case "Tier 1":
                     availableBuildPoints = 100;
                     lblAvailableBuildPoints.Text = availableBuildPoints.ToString();
-                    SetAttributeMaximumsFromTier(4);
+                    SetAttributeMaximums(4);
                     break;
                 case "Tier 2":
                     availableBuildPoints = 200;
                     lblAvailableBuildPoints.Text = availableBuildPoints.ToString();
-                    SetAttributeMaximumsFromTier(6);
+                    SetAttributeMaximums(6);
                     break;
                 case "Tier 3":
                     availableBuildPoints = 300;
                     lblAvailableBuildPoints.Text = availableBuildPoints.ToString();
-                    SetAttributeMaximumsFromTier(8);
+                    SetAttributeMaximums(8);
                     break;
                 case "Tier 4":
                     availableBuildPoints = 400;
                     lblAvailableBuildPoints.Text = availableBuildPoints.ToString();
-                    SetAttributeMaximumsFromTier(10);
+                    SetAttributeMaximums(10);
                     break;
                 case "Tier 5":
                     availableBuildPoints = 500;
                     lblAvailableBuildPoints.Text = availableBuildPoints.ToString();
-                    SetAttributeMaximumsFromTier(12);
+                    SetAttributeMaximums(12);
                     break;
                 default:
                     lblAvailableBuildPoints.Text = "0";
@@ -70,15 +72,59 @@ namespace WrathAndGloryCharacterCreator
             }
         }
 
-        private void SetAttributeMaximumsFromTier(int maximum)
+        private void SetAttributeMaximums(int maximumFromTier)
         {
-            nudAgility.Maximum = maximum;
-            nudFellowship.Maximum = maximum;
-            nudInitiative.Maximum = maximum;
-            nudIntellect.Maximum = maximum;
-            nudStrength.Maximum = maximum;
-            nudToughness.Maximum = maximum;
-            nudWillpower.Maximum = maximum;
+            string species = Convert.ToString(cmbSpecies.SelectedItem);
+            if (species == "Human")
+            {
+                nudAgility.Maximum = Math.Min(8, maximumFromTier);
+                nudFellowship.Maximum = Math.Min(8, maximumFromTier);
+                nudInitiative.Maximum = Math.Min(8, maximumFromTier);
+                nudIntellect.Maximum = Math.Min(8, maximumFromTier);
+                nudStrength.Maximum = Math.Min(8, maximumFromTier);
+                nudToughness.Maximum = Math.Min(8, maximumFromTier);
+                nudWillpower.Maximum = Math.Min(8, maximumFromTier);
+            }
+            if (species == "Eldar")
+            {
+                nudAgility.Maximum = Math.Min(12, maximumFromTier);
+                nudFellowship.Maximum = Math.Min(8, maximumFromTier);
+                nudInitiative.Maximum = Math.Min(12, maximumFromTier);
+                nudIntellect.Maximum = Math.Min(10, maximumFromTier);
+                nudStrength.Maximum = Math.Min(7, maximumFromTier);
+                nudToughness.Maximum = Math.Min(7, maximumFromTier);
+                nudWillpower.Maximum = Math.Min(12, maximumFromTier);
+            }
+            if (species == "Ork")
+            {
+                nudAgility.Maximum = Math.Min(7, maximumFromTier);
+                nudFellowship.Maximum = Math.Min(7, maximumFromTier);
+                nudInitiative.Maximum = Math.Min(7, maximumFromTier);
+                nudIntellect.Maximum = Math.Min(7, maximumFromTier);
+                nudStrength.Maximum = Math.Min(12, maximumFromTier);
+                nudToughness.Maximum = Math.Min(12, maximumFromTier);
+                nudWillpower.Maximum = Math.Min(8, maximumFromTier);
+            }
+            if (species == "Adeptus Astartes")
+            {
+                nudAgility.Maximum = Math.Min(9, maximumFromTier);
+                nudFellowship.Maximum = Math.Min(8, maximumFromTier);
+                nudInitiative.Maximum = Math.Min(9, maximumFromTier);
+                nudIntellect.Maximum = Math.Min(10, maximumFromTier);
+                nudStrength.Maximum = Math.Min(10, maximumFromTier);
+                nudToughness.Maximum = Math.Min(10, maximumFromTier);
+                nudWillpower.Maximum = Math.Min(10, maximumFromTier);
+            }
+            if (species == "Primaris Astartes")
+            {
+                nudAgility.Maximum = Math.Min(9, maximumFromTier);
+                nudFellowship.Maximum = Math.Min(8, maximumFromTier);
+                nudInitiative.Maximum = Math.Min(9, maximumFromTier);
+                nudIntellect.Maximum = Math.Min(10, maximumFromTier);
+                nudStrength.Maximum = Math.Min(12, maximumFromTier);
+                nudToughness.Maximum = Math.Min(12, maximumFromTier);
+                nudWillpower.Maximum = Math.Min(10, maximumFromTier);
+            }
         }
 
         //should be called when tier, species, archetype, etc. are changed
@@ -102,6 +148,8 @@ namespace WrathAndGloryCharacterCreator
             lblUsedBuildPoints.Text = currentBuildPoints.ToString();
         }
 
+        //calls the function lstChooseTeir_SelectedIndexChanged
+        //so that we can set the attribute maximums when they change species as well as tier
         private void cmbSpecies_SelectedIndexChanged(object sender, EventArgs e)
         {
             string selectedSpecies = cmbSpecies.SelectedItem.ToString();
@@ -110,22 +158,27 @@ namespace WrathAndGloryCharacterCreator
                 case "Human":
                     buildPointsFromSpecies = 0;
                     txtSpeed.Text = "6";
+                    lstChooseTier_SelectedIndexChanged(sender, e);
                     break;
                 case "Eldar":
                     buildPointsFromSpecies = 10;
                     txtSpeed.Text = "8";
+                    lstChooseTier_SelectedIndexChanged(sender, e);
                     break;
                 case "Ork":
                     buildPointsFromSpecies = 10;
                     txtSpeed.Text = "6";
+                    lstChooseTier_SelectedIndexChanged(sender, e);
                     break;
                 case "Adeptus Astartes":
                     buildPointsFromSpecies = 50;
                     txtSpeed.Text = "7";
+                    lstChooseTier_SelectedIndexChanged(sender, e);
                     break;
                 case "Primaris Astartes":
                     buildPointsFromSpecies = 100;
                     txtSpeed.Text = "7";
+                    lstChooseTier_SelectedIndexChanged(sender, e);
                     break;
                 default:
                     buildPointsFromSpecies = 0;

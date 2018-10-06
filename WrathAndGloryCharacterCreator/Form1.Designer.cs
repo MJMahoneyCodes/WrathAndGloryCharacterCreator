@@ -192,7 +192,8 @@
             // 
             this.cmbArchetype.FormattingEnabled = true;
             this.cmbArchetype.Items.AddRange(new object[] {
-            "Ministorum Priest"});
+            "Ministorum Priest",
+            "Death Cult Assassin"});
             this.cmbArchetype.Location = new System.Drawing.Point(13, 207);
             this.cmbArchetype.Name = "cmbArchetype";
             this.cmbArchetype.Size = new System.Drawing.Size(154, 24);
