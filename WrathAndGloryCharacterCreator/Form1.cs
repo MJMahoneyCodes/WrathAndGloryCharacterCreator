@@ -45,26 +45,31 @@ namespace WrathAndGloryCharacterCreator
                     availableBuildPoints = 100;
                     lblAvailableBuildPoints.Text = availableBuildPoints.ToString();
                     SetAttributeMaximums(4);
+                    UpdateTraits();
                     break;
                 case "Tier 2":
                     availableBuildPoints = 200;
                     lblAvailableBuildPoints.Text = availableBuildPoints.ToString();
                     SetAttributeMaximums(6);
+                    UpdateTraits();
                     break;
                 case "Tier 3":
                     availableBuildPoints = 300;
                     lblAvailableBuildPoints.Text = availableBuildPoints.ToString();
                     SetAttributeMaximums(8);
+                    UpdateTraits();
                     break;
                 case "Tier 4":
                     availableBuildPoints = 400;
                     lblAvailableBuildPoints.Text = availableBuildPoints.ToString();
                     SetAttributeMaximums(10);
+                    UpdateTraits();
                     break;
                 case "Tier 5":
                     availableBuildPoints = 500;
                     lblAvailableBuildPoints.Text = availableBuildPoints.ToString();
                     SetAttributeMaximums(12);
+                    UpdateTraits();
                     break;
                 default:
                     lblAvailableBuildPoints.Text = "0";
@@ -131,7 +136,19 @@ namespace WrathAndGloryCharacterCreator
         private void UpdateTraits()
         {
             txtDefense.Text = Math.Max(nudInitiative.Value - 1,1).ToString();
-            
+            txtResilience.Text = (nudToughness.Value + 1).ToString();
+            txtSoak.Text = nudToughness.Value.ToString();
+            //gets just the number from the tier drop down
+            char tierNumber = lstChooseTier.SelectedItem.ToString()[lstChooseTier.SelectedItem.ToString().Length - 1];
+            txtShock.Text = Convert.ToString(nudWillpower.Value + Convert.ToInt32(tierNumber.ToString()));
+            txtWounds.Text = Convert.ToString(nudToughness.Value + Convert.ToInt32(tierNumber.ToString()));
+            txtConviction.Text = nudWillpower.Value.ToString();
+            txtCorruption.Text = Convert.ToString(0);
+            //TODO: After skills, come back and set PassiveAwareness to 1/2 total Awareness skill.
+            //txtPassiveAwareness.Text = 
+            txtResolve.Text = Convert.ToString(Math.Max(nudWillpower.Value - 1,1));
+            txtInfluence.Text = Convert.ToString(Math.Max(nudFellowship.Value - 1, 1));
+            txtWealth.Text = Convert.ToString(tierNumber);
         }
 
         private void CalculateBuildPoints()
@@ -159,26 +176,31 @@ namespace WrathAndGloryCharacterCreator
                     buildPointsFromSpecies = 0;
                     txtSpeed.Text = "6";
                     lstChooseTier_SelectedIndexChanged(sender, e);
+                    UpdateTraits();
                     break;
                 case "Eldar":
                     buildPointsFromSpecies = 10;
                     txtSpeed.Text = "8";
                     lstChooseTier_SelectedIndexChanged(sender, e);
+                    UpdateTraits();
                     break;
                 case "Ork":
                     buildPointsFromSpecies = 10;
                     txtSpeed.Text = "6";
                     lstChooseTier_SelectedIndexChanged(sender, e);
+                    UpdateTraits();
                     break;
                 case "Adeptus Astartes":
                     buildPointsFromSpecies = 50;
                     txtSpeed.Text = "7";
                     lstChooseTier_SelectedIndexChanged(sender, e);
+                    UpdateTraits();
                     break;
                 case "Primaris Astartes":
                     buildPointsFromSpecies = 100;
                     txtSpeed.Text = "7";
                     lstChooseTier_SelectedIndexChanged(sender, e);
+                    UpdateTraits();
                     break;
                 default:
                     buildPointsFromSpecies = 0;
@@ -534,7 +556,7 @@ namespace WrathAndGloryCharacterCreator
                 default:
                     break;
             }
-
+            UpdateTraits();
             CalculateBuildPoints();
         }
 
@@ -636,6 +658,7 @@ namespace WrathAndGloryCharacterCreator
             {
                 lblKeywords.Text = String.Join(", ", keywords.ToArray());
             }
+            UpdateTraits();
         }
     }
 }
