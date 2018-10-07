@@ -22,6 +22,7 @@ namespace WrathAndGloryCharacterCreator
         int buildPointsFromWillpower = 0;
         int buildPointsFromFellowship = 0;
         int buildPointsFromInitiative = 0;
+        int buildPointsFromAssets = 0;
 
         List<string> validationRules = new List<string>();
         List<string> keywords = new List<string>();
@@ -75,6 +76,8 @@ namespace WrathAndGloryCharacterCreator
                     lblAvailableBuildPoints.Text = "0";
                     break;
             }
+            char tierNumber = lstChooseTier.SelectedItem.ToString()[lstChooseTier.SelectedItem.ToString().Length - 1];
+            nudAssets.Maximum = Convert.ToInt32(tierNumber.ToString());
         }
 
         private void SetAttributeMaximums(int maximumFromTier)
@@ -141,9 +144,9 @@ namespace WrathAndGloryCharacterCreator
             //gets just the number from the tier drop down
             char tierNumber = lstChooseTier.SelectedItem.ToString()[lstChooseTier.SelectedItem.ToString().Length - 1];
             txtShock.Text = Convert.ToString(nudWillpower.Value + Convert.ToInt32(tierNumber.ToString()));
+            txtCorruption.Text = Convert.ToString(0);
             txtWounds.Text = Convert.ToString(nudToughness.Value + Convert.ToInt32(tierNumber.ToString()));
             txtConviction.Text = nudWillpower.Value.ToString();
-            txtCorruption.Text = Convert.ToString(0);
             //TODO: After skills, come back and set PassiveAwareness to 1/2 total Awareness skill.
             //txtPassiveAwareness.Text = 
             txtResolve.Text = Convert.ToString(Math.Max(nudWillpower.Value - 1,1));
@@ -160,7 +163,8 @@ namespace WrathAndGloryCharacterCreator
                 buildPointsFromIntellect +
                 buildPointsFromWillpower + 
                 buildPointsFromFellowship +
-                buildPointsFromInitiative
+                buildPointsFromInitiative +
+                buildPointsFromAssets
                 ;
             lblUsedBuildPoints.Text = currentBuildPoints.ToString();
         }
@@ -659,6 +663,13 @@ namespace WrathAndGloryCharacterCreator
                 lblKeywords.Text = String.Join(", ", keywords.ToArray());
             }
             UpdateTraits();
+        }
+
+        private void nudAssets_ValueChanged(object sender, EventArgs e)
+        {
+            buildPointsFromAssets = Convert.ToInt32(nudAssets.Value);
+            CalculateBuildPoints();
+            ValidateBuildPoints();
         }
     }
 }
