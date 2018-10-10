@@ -46,30 +46,35 @@ namespace WrathAndGloryCharacterCreator
                     availableBuildPoints = 100;
                     lblAvailableBuildPoints.Text = availableBuildPoints.ToString();
                     SetAttributeMaximums(4);
+                    SetSkillMaximums(4);
                     UpdateTraits();
                     break;
                 case "Tier 2":
                     availableBuildPoints = 200;
                     lblAvailableBuildPoints.Text = availableBuildPoints.ToString();
                     SetAttributeMaximums(6);
+                    SetSkillMaximums(5);
                     UpdateTraits();
                     break;
                 case "Tier 3":
                     availableBuildPoints = 300;
                     lblAvailableBuildPoints.Text = availableBuildPoints.ToString();
                     SetAttributeMaximums(8);
+                    SetSkillMaximums(6);
                     UpdateTraits();
                     break;
                 case "Tier 4":
                     availableBuildPoints = 400;
                     lblAvailableBuildPoints.Text = availableBuildPoints.ToString();
                     SetAttributeMaximums(10);
+                    SetSkillMaximums(7);
                     UpdateTraits();
                     break;
                 case "Tier 5":
                     availableBuildPoints = 500;
                     lblAvailableBuildPoints.Text = availableBuildPoints.ToString();
                     SetAttributeMaximums(12);
+                    SetSkillMaximums(8);
                     UpdateTraits();
                     break;
                 default:
@@ -78,6 +83,28 @@ namespace WrathAndGloryCharacterCreator
             }
             char tierNumber = lstChooseTier.SelectedItem.ToString()[lstChooseTier.SelectedItem.ToString().Length - 1];
             nudAssets.Maximum = Convert.ToInt32(tierNumber.ToString());
+        }
+
+        private void SetSkillMaximums(int maximumFromTier)
+        {
+            nudAthletics.Maximum = maximumFromTier;
+            nudAwareness.Maximum = maximumFromTier;
+            nudBallisticSkill.Maximum = maximumFromTier;
+            nudCunning.Maximum = maximumFromTier;
+            nudDeception.Maximum = maximumFromTier;
+            nudInsight.Maximum = maximumFromTier;
+            nudIntimidation.Maximum = maximumFromTier;
+            nudInvestigation.Maximum = maximumFromTier;
+            nudLeadership.Maximum = maximumFromTier;
+            nudMedicae.Maximum = maximumFromTier;
+            nudPersuasion.Maximum = maximumFromTier;
+            nudPilot.Maximum = maximumFromTier;
+            nudPsychicMastery.Maximum = maximumFromTier;
+            nudScholar.Maximum = maximumFromTier;
+            nudStealth.Maximum = maximumFromTier;
+            nudSurvival.Maximum = maximumFromTier;
+            nudTech.Maximum = maximumFromTier;
+            nudWeaponSkill.Maximum = maximumFromTier;
         }
 
         private void SetAttributeMaximums(int maximumFromTier)

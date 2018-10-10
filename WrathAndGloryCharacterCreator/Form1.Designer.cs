@@ -94,13 +94,13 @@
             this.label35 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown6 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown7 = new System.Windows.Forms.NumericUpDown();
+            this.nudSurvival = new System.Windows.Forms.NumericUpDown();
+            this.nudStealth = new System.Windows.Forms.NumericUpDown();
+            this.nudScholar = new System.Windows.Forms.NumericUpDown();
+            this.nudPsychicMastery = new System.Windows.Forms.NumericUpDown();
+            this.nudPilot = new System.Windows.Forms.NumericUpDown();
+            this.nudPersuasion = new System.Windows.Forms.NumericUpDown();
+            this.nudMedicae = new System.Windows.Forms.NumericUpDown();
             this.label38 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
@@ -108,13 +108,23 @@
             this.label42 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
-            this.numericUpDown8 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown9 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown10 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown11 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown12 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown13 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown14 = new System.Windows.Forms.NumericUpDown();
+            this.nudLeadership = new System.Windows.Forms.NumericUpDown();
+            this.nudInvestigation = new System.Windows.Forms.NumericUpDown();
+            this.nudIntimidation = new System.Windows.Forms.NumericUpDown();
+            this.nudInsight = new System.Windows.Forms.NumericUpDown();
+            this.nudDeception = new System.Windows.Forms.NumericUpDown();
+            this.nudWeaponSkill = new System.Windows.Forms.NumericUpDown();
+            this.nudTech = new System.Windows.Forms.NumericUpDown();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.nudCunning = new System.Windows.Forms.NumericUpDown();
+            this.nudBallisticSkill = new System.Windows.Forms.NumericUpDown();
+            this.nudAwareness = new System.Windows.Forms.NumericUpDown();
+            this.nudAthletics = new System.Windows.Forms.NumericUpDown();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.nudStrength)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudAgility)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudToughness)).BeginInit();
@@ -123,20 +133,24 @@
             ((System.ComponentModel.ISupportInitialize)(this.nudFellowship)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudInitiative)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudAssets)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudSurvival)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudStealth)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudScholar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPsychicMastery)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPilot)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPersuasion)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudMedicae)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudLeadership)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudInvestigation)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudIntimidation)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudInsight)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudDeception)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudWeaponSkill)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudTech)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCunning)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudBallisticSkill)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudAwareness)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudAthletics)).BeginInit();
             this.SuspendLayout();
             // 
             // lstChooseTier
@@ -247,7 +261,7 @@
             // 
             // nudStrength
             // 
-            this.nudStrength.Location = new System.Drawing.Point(112, 250);
+            this.nudStrength.Location = new System.Drawing.Point(93, 250);
             this.nudStrength.Maximum = new decimal(new int[] {
             12,
             0,
@@ -270,7 +284,7 @@
             // 
             // nudAgility
             // 
-            this.nudAgility.Location = new System.Drawing.Point(112, 278);
+            this.nudAgility.Location = new System.Drawing.Point(93, 278);
             this.nudAgility.Maximum = new decimal(new int[] {
             12,
             0,
@@ -293,7 +307,7 @@
             // 
             // nudToughness
             // 
-            this.nudToughness.Location = new System.Drawing.Point(112, 306);
+            this.nudToughness.Location = new System.Drawing.Point(93, 306);
             this.nudToughness.Maximum = new decimal(new int[] {
             12,
             0,
@@ -316,7 +330,7 @@
             // 
             // nudIntellect
             // 
-            this.nudIntellect.Location = new System.Drawing.Point(112, 334);
+            this.nudIntellect.Location = new System.Drawing.Point(93, 334);
             this.nudIntellect.Maximum = new decimal(new int[] {
             12,
             0,
@@ -339,7 +353,7 @@
             // 
             // nudWillpower
             // 
-            this.nudWillpower.Location = new System.Drawing.Point(112, 362);
+            this.nudWillpower.Location = new System.Drawing.Point(93, 362);
             this.nudWillpower.Maximum = new decimal(new int[] {
             12,
             0,
@@ -362,7 +376,7 @@
             // 
             // nudFellowship
             // 
-            this.nudFellowship.Location = new System.Drawing.Point(112, 390);
+            this.nudFellowship.Location = new System.Drawing.Point(93, 390);
             this.nudFellowship.Maximum = new decimal(new int[] {
             12,
             0,
@@ -385,7 +399,7 @@
             // 
             // nudInitiative
             // 
-            this.nudInitiative.Location = new System.Drawing.Point(112, 418);
+            this.nudInitiative.Location = new System.Drawing.Point(93, 418);
             this.nudInitiative.Maximum = new decimal(new int[] {
             12,
             0,
@@ -497,7 +511,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(193, 390);
+            this.label15.Location = new System.Drawing.Point(152, 390);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(60, 17);
             this.label15.TabIndex = 34;
@@ -506,7 +520,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(193, 362);
+            this.label16.Location = new System.Drawing.Point(152, 362);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(49, 17);
             this.label16.TabIndex = 33;
@@ -515,7 +529,7 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(193, 334);
+            this.label17.Location = new System.Drawing.Point(152, 334);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(47, 17);
             this.label17.TabIndex = 32;
@@ -524,7 +538,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(193, 306);
+            this.label18.Location = new System.Drawing.Point(152, 306);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(40, 17);
             this.label18.TabIndex = 31;
@@ -533,7 +547,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(193, 278);
+            this.label19.Location = new System.Drawing.Point(152, 278);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(73, 17);
             this.label19.TabIndex = 30;
@@ -542,7 +556,7 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(193, 250);
+            this.label20.Location = new System.Drawing.Point(152, 250);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(61, 17);
             this.label20.TabIndex = 29;
@@ -551,7 +565,7 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(304, 335);
+            this.label21.Location = new System.Drawing.Point(263, 335);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(59, 17);
             this.label21.TabIndex = 38;
@@ -560,7 +574,7 @@
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(304, 299);
+            this.label22.Location = new System.Drawing.Point(263, 299);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(57, 17);
             this.label22.TabIndex = 37;
@@ -569,7 +583,7 @@
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(304, 278);
+            this.label23.Location = new System.Drawing.Point(263, 278);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(74, 17);
             this.label23.TabIndex = 36;
@@ -578,7 +592,7 @@
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(304, 250);
+            this.label24.Location = new System.Drawing.Point(263, 250);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(73, 17);
             this.label24.TabIndex = 35;
@@ -587,7 +601,7 @@
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(305, 397);
+            this.label25.Location = new System.Drawing.Point(264, 397);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(52, 17);
             this.label25.TabIndex = 40;
@@ -596,7 +610,7 @@
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(305, 369);
+            this.label26.Location = new System.Drawing.Point(264, 369);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(65, 17);
             this.label26.TabIndex = 39;
@@ -606,7 +620,7 @@
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(193, 233);
+            this.label27.Location = new System.Drawing.Point(152, 233);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(56, 17);
             this.label27.TabIndex = 41;
@@ -616,7 +630,7 @@
             // 
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(304, 233);
+            this.label28.Location = new System.Drawing.Point(263, 233);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(50, 17);
             this.label28.TabIndex = 42;
@@ -626,7 +640,7 @@
             // 
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(305, 352);
+            this.label29.Location = new System.Drawing.Point(264, 352);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(46, 17);
             this.label29.TabIndex = 43;
@@ -634,7 +648,7 @@
             // 
             // txtDefense
             // 
-            this.txtDefense.Location = new System.Drawing.Point(274, 250);
+            this.txtDefense.Location = new System.Drawing.Point(233, 250);
             this.txtDefense.Name = "txtDefense";
             this.txtDefense.ReadOnly = true;
             this.txtDefense.Size = new System.Drawing.Size(24, 22);
@@ -643,7 +657,7 @@
             // 
             // txtResilience
             // 
-            this.txtResilience.Location = new System.Drawing.Point(274, 278);
+            this.txtResilience.Location = new System.Drawing.Point(233, 278);
             this.txtResilience.Name = "txtResilience";
             this.txtResilience.ReadOnly = true;
             this.txtResilience.Size = new System.Drawing.Size(24, 22);
@@ -652,7 +666,7 @@
             // 
             // txtSoak
             // 
-            this.txtSoak.Location = new System.Drawing.Point(274, 306);
+            this.txtSoak.Location = new System.Drawing.Point(233, 306);
             this.txtSoak.Name = "txtSoak";
             this.txtSoak.ReadOnly = true;
             this.txtSoak.Size = new System.Drawing.Size(24, 22);
@@ -661,7 +675,7 @@
             // 
             // txtShock
             // 
-            this.txtShock.Location = new System.Drawing.Point(274, 334);
+            this.txtShock.Location = new System.Drawing.Point(233, 334);
             this.txtShock.Name = "txtShock";
             this.txtShock.ReadOnly = true;
             this.txtShock.Size = new System.Drawing.Size(24, 22);
@@ -670,7 +684,7 @@
             // 
             // txtSpeed
             // 
-            this.txtSpeed.Location = new System.Drawing.Point(274, 362);
+            this.txtSpeed.Location = new System.Drawing.Point(233, 362);
             this.txtSpeed.Name = "txtSpeed";
             this.txtSpeed.ReadOnly = true;
             this.txtSpeed.Size = new System.Drawing.Size(24, 22);
@@ -679,7 +693,7 @@
             // 
             // txtWounds
             // 
-            this.txtWounds.Location = new System.Drawing.Point(274, 390);
+            this.txtWounds.Location = new System.Drawing.Point(233, 390);
             this.txtWounds.Name = "txtWounds";
             this.txtWounds.ReadOnly = true;
             this.txtWounds.Size = new System.Drawing.Size(24, 22);
@@ -688,7 +702,7 @@
             // 
             // txtPassiveAwareness
             // 
-            this.txtPassiveAwareness.Location = new System.Drawing.Point(382, 306);
+            this.txtPassiveAwareness.Location = new System.Drawing.Point(341, 306);
             this.txtPassiveAwareness.Name = "txtPassiveAwareness";
             this.txtPassiveAwareness.ReadOnly = true;
             this.txtPassiveAwareness.Size = new System.Drawing.Size(24, 22);
@@ -697,7 +711,7 @@
             // 
             // txtCorruption
             // 
-            this.txtCorruption.Location = new System.Drawing.Point(382, 278);
+            this.txtCorruption.Location = new System.Drawing.Point(341, 278);
             this.txtCorruption.Name = "txtCorruption";
             this.txtCorruption.ReadOnly = true;
             this.txtCorruption.Size = new System.Drawing.Size(24, 22);
@@ -706,7 +720,7 @@
             // 
             // txtConviction
             // 
-            this.txtConviction.Location = new System.Drawing.Point(382, 250);
+            this.txtConviction.Location = new System.Drawing.Point(341, 250);
             this.txtConviction.Name = "txtConviction";
             this.txtConviction.ReadOnly = true;
             this.txtConviction.Size = new System.Drawing.Size(24, 22);
@@ -715,7 +729,7 @@
             // 
             // txtWealth
             // 
-            this.txtWealth.Location = new System.Drawing.Point(382, 397);
+            this.txtWealth.Location = new System.Drawing.Point(341, 397);
             this.txtWealth.Name = "txtWealth";
             this.txtWealth.ReadOnly = true;
             this.txtWealth.Size = new System.Drawing.Size(24, 22);
@@ -724,7 +738,7 @@
             // 
             // txtInfluence
             // 
-            this.txtInfluence.Location = new System.Drawing.Point(382, 369);
+            this.txtInfluence.Location = new System.Drawing.Point(341, 369);
             this.txtInfluence.Name = "txtInfluence";
             this.txtInfluence.ReadOnly = true;
             this.txtInfluence.Size = new System.Drawing.Size(24, 22);
@@ -734,7 +748,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(304, 316);
+            this.label13.Location = new System.Drawing.Point(263, 316);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(77, 17);
             this.label13.TabIndex = 55;
@@ -742,7 +756,7 @@
             // 
             // txtResolve
             // 
-            this.txtResolve.Location = new System.Drawing.Point(382, 335);
+            this.txtResolve.Location = new System.Drawing.Point(341, 335);
             this.txtResolve.Name = "txtResolve";
             this.txtResolve.ReadOnly = true;
             this.txtResolve.Size = new System.Drawing.Size(24, 22);
@@ -752,7 +766,7 @@
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(193, 420);
+            this.label30.Location = new System.Drawing.Point(152, 420);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(50, 17);
             this.label30.TabIndex = 57;
@@ -760,7 +774,7 @@
             // 
             // nudAssets
             // 
-            this.nudAssets.Location = new System.Drawing.Point(274, 418);
+            this.nudAssets.Location = new System.Drawing.Point(233, 418);
             this.nudAssets.Maximum = new decimal(new int[] {
             5,
             0,
@@ -774,442 +788,416 @@
             // label31
             // 
             this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(615, 249);
+            this.label31.Location = new System.Drawing.Point(555, 254);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(59, 17);
+            this.label31.Size = new System.Drawing.Size(58, 17);
             this.label31.TabIndex = 72;
-            this.label31.Text = "Initiative";
+            this.label31.Text = "Survival";
             // 
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(615, 221);
+            this.label32.Location = new System.Drawing.Point(555, 226);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(73, 17);
+            this.label32.Size = new System.Drawing.Size(52, 17);
             this.label32.TabIndex = 71;
-            this.label32.Text = "Fellowship";
+            this.label32.Text = "Stealth";
             // 
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(615, 193);
+            this.label33.Location = new System.Drawing.Point(555, 198);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(68, 17);
+            this.label33.Size = new System.Drawing.Size(56, 17);
             this.label33.TabIndex = 70;
-            this.label33.Text = "Willpower";
+            this.label33.Text = "Scholar";
             // 
             // label34
             // 
             this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(615, 165);
+            this.label34.Location = new System.Drawing.Point(555, 170);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(56, 17);
+            this.label34.Size = new System.Drawing.Size(89, 17);
             this.label34.TabIndex = 69;
-            this.label34.Text = "Intellect";
+            this.label34.Text = "Psy. Mastery";
             // 
             // label35
             // 
             this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(615, 137);
+            this.label35.Location = new System.Drawing.Point(555, 142);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(79, 17);
+            this.label35.Size = new System.Drawing.Size(35, 17);
             this.label35.TabIndex = 68;
-            this.label35.Text = "Toughness";
+            this.label35.Text = "Pilot";
             // 
             // label36
             // 
             this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(615, 109);
+            this.label36.Location = new System.Drawing.Point(555, 114);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(45, 17);
+            this.label36.Size = new System.Drawing.Size(79, 17);
             this.label36.TabIndex = 67;
-            this.label36.Text = "Agility";
+            this.label36.Text = "Persuasion";
             // 
             // label37
             // 
             this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(615, 81);
+            this.label37.Location = new System.Drawing.Point(555, 86);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(62, 17);
+            this.label37.Size = new System.Drawing.Size(61, 17);
             this.label37.TabIndex = 66;
-            this.label37.Text = "Strength";
+            this.label37.Text = "Medicae";
             // 
-            // numericUpDown1
+            // nudSurvival
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(715, 249);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
-            12,
+            this.nudSurvival.Location = new System.Drawing.Point(655, 254);
+            this.nudSurvival.Maximum = new decimal(new int[] {
+            8,
             0,
             0,
             0});
-            this.numericUpDown1.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(55, 22);
-            this.numericUpDown1.TabIndex = 65;
-            this.numericUpDown1.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.nudSurvival.Name = "nudSurvival";
+            this.nudSurvival.Size = new System.Drawing.Size(55, 22);
+            this.nudSurvival.TabIndex = 65;
             // 
-            // numericUpDown2
+            // nudStealth
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(715, 221);
-            this.numericUpDown2.Maximum = new decimal(new int[] {
-            12,
+            this.nudStealth.Location = new System.Drawing.Point(655, 226);
+            this.nudStealth.Maximum = new decimal(new int[] {
+            8,
             0,
             0,
             0});
-            this.numericUpDown2.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(55, 22);
-            this.numericUpDown2.TabIndex = 64;
-            this.numericUpDown2.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.nudStealth.Name = "nudStealth";
+            this.nudStealth.Size = new System.Drawing.Size(55, 22);
+            this.nudStealth.TabIndex = 64;
             // 
-            // numericUpDown3
+            // nudScholar
             // 
-            this.numericUpDown3.Location = new System.Drawing.Point(715, 193);
-            this.numericUpDown3.Maximum = new decimal(new int[] {
-            12,
+            this.nudScholar.Location = new System.Drawing.Point(655, 198);
+            this.nudScholar.Maximum = new decimal(new int[] {
+            8,
             0,
             0,
             0});
-            this.numericUpDown3.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(55, 22);
-            this.numericUpDown3.TabIndex = 63;
-            this.numericUpDown3.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.nudScholar.Name = "nudScholar";
+            this.nudScholar.Size = new System.Drawing.Size(55, 22);
+            this.nudScholar.TabIndex = 63;
             // 
-            // numericUpDown4
+            // nudPsychicMastery
             // 
-            this.numericUpDown4.Location = new System.Drawing.Point(715, 165);
-            this.numericUpDown4.Maximum = new decimal(new int[] {
-            12,
+            this.nudPsychicMastery.Location = new System.Drawing.Point(655, 170);
+            this.nudPsychicMastery.Maximum = new decimal(new int[] {
+            8,
             0,
             0,
             0});
-            this.numericUpDown4.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.Size = new System.Drawing.Size(55, 22);
-            this.numericUpDown4.TabIndex = 62;
-            this.numericUpDown4.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.nudPsychicMastery.Name = "nudPsychicMastery";
+            this.nudPsychicMastery.Size = new System.Drawing.Size(55, 22);
+            this.nudPsychicMastery.TabIndex = 62;
             // 
-            // numericUpDown5
+            // nudPilot
             // 
-            this.numericUpDown5.Location = new System.Drawing.Point(715, 137);
-            this.numericUpDown5.Maximum = new decimal(new int[] {
-            12,
+            this.nudPilot.Location = new System.Drawing.Point(655, 142);
+            this.nudPilot.Maximum = new decimal(new int[] {
+            8,
             0,
             0,
             0});
-            this.numericUpDown5.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown5.Name = "numericUpDown5";
-            this.numericUpDown5.Size = new System.Drawing.Size(55, 22);
-            this.numericUpDown5.TabIndex = 61;
-            this.numericUpDown5.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.nudPilot.Name = "nudPilot";
+            this.nudPilot.Size = new System.Drawing.Size(55, 22);
+            this.nudPilot.TabIndex = 61;
             // 
-            // numericUpDown6
+            // nudPersuasion
             // 
-            this.numericUpDown6.Location = new System.Drawing.Point(715, 109);
-            this.numericUpDown6.Maximum = new decimal(new int[] {
-            12,
+            this.nudPersuasion.Location = new System.Drawing.Point(655, 114);
+            this.nudPersuasion.Maximum = new decimal(new int[] {
+            8,
             0,
             0,
             0});
-            this.numericUpDown6.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown6.Name = "numericUpDown6";
-            this.numericUpDown6.Size = new System.Drawing.Size(55, 22);
-            this.numericUpDown6.TabIndex = 60;
-            this.numericUpDown6.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.nudPersuasion.Name = "nudPersuasion";
+            this.nudPersuasion.Size = new System.Drawing.Size(55, 22);
+            this.nudPersuasion.TabIndex = 60;
             // 
-            // numericUpDown7
+            // nudMedicae
             // 
-            this.numericUpDown7.Location = new System.Drawing.Point(715, 81);
-            this.numericUpDown7.Maximum = new decimal(new int[] {
-            12,
+            this.nudMedicae.Location = new System.Drawing.Point(655, 86);
+            this.nudMedicae.Maximum = new decimal(new int[] {
+            8,
             0,
             0,
             0});
-            this.numericUpDown7.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown7.Name = "numericUpDown7";
-            this.numericUpDown7.Size = new System.Drawing.Size(55, 22);
-            this.numericUpDown7.TabIndex = 59;
-            this.numericUpDown7.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.nudMedicae.Name = "nudMedicae";
+            this.nudMedicae.Size = new System.Drawing.Size(55, 22);
+            this.nudMedicae.TabIndex = 59;
             // 
             // label38
             // 
             this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(615, 446);
+            this.label38.Location = new System.Drawing.Point(383, 310);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(59, 17);
+            this.label38.Size = new System.Drawing.Size(79, 17);
             this.label38.TabIndex = 86;
-            this.label38.Text = "Initiative";
+            this.label38.Text = "Leadership";
             // 
             // label39
             // 
             this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(615, 418);
+            this.label39.Location = new System.Drawing.Point(383, 282);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(73, 17);
+            this.label39.Size = new System.Drawing.Size(87, 17);
             this.label39.TabIndex = 85;
-            this.label39.Text = "Fellowship";
+            this.label39.Text = "Investigation";
             // 
             // label40
             // 
             this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(615, 390);
+            this.label40.Location = new System.Drawing.Point(383, 254);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(68, 17);
+            this.label40.Size = new System.Drawing.Size(79, 17);
             this.label40.TabIndex = 84;
-            this.label40.Text = "Willpower";
+            this.label40.Text = "Intimidation";
             // 
             // label41
             // 
             this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(615, 362);
+            this.label41.Location = new System.Drawing.Point(383, 226);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(56, 17);
+            this.label41.Size = new System.Drawing.Size(49, 17);
             this.label41.TabIndex = 83;
-            this.label41.Text = "Intellect";
+            this.label41.Text = "Insight";
             // 
             // label42
             // 
             this.label42.AutoSize = true;
-            this.label42.Location = new System.Drawing.Point(615, 334);
+            this.label42.Location = new System.Drawing.Point(383, 198);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(79, 17);
+            this.label42.Size = new System.Drawing.Size(72, 17);
             this.label42.TabIndex = 82;
-            this.label42.Text = "Toughness";
+            this.label42.Text = "Deception";
             // 
             // label43
             // 
             this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(615, 306);
+            this.label43.Location = new System.Drawing.Point(555, 311);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(45, 17);
+            this.label43.Size = new System.Drawing.Size(90, 17);
             this.label43.TabIndex = 81;
-            this.label43.Text = "Agility";
+            this.label43.Text = "Weapon Skill";
             // 
             // label44
             // 
             this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(615, 278);
+            this.label44.Location = new System.Drawing.Point(555, 283);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(62, 17);
+            this.label44.Size = new System.Drawing.Size(40, 17);
             this.label44.TabIndex = 80;
-            this.label44.Text = "Strength";
+            this.label44.Text = "Tech";
             // 
-            // numericUpDown8
+            // nudLeadership
             // 
-            this.numericUpDown8.Location = new System.Drawing.Point(715, 446);
-            this.numericUpDown8.Maximum = new decimal(new int[] {
-            12,
+            this.nudLeadership.Location = new System.Drawing.Point(483, 310);
+            this.nudLeadership.Maximum = new decimal(new int[] {
+            8,
             0,
             0,
             0});
-            this.numericUpDown8.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown8.Name = "numericUpDown8";
-            this.numericUpDown8.Size = new System.Drawing.Size(55, 22);
-            this.numericUpDown8.TabIndex = 79;
-            this.numericUpDown8.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.nudLeadership.Name = "nudLeadership";
+            this.nudLeadership.Size = new System.Drawing.Size(55, 22);
+            this.nudLeadership.TabIndex = 79;
             // 
-            // numericUpDown9
+            // nudInvestigation
             // 
-            this.numericUpDown9.Location = new System.Drawing.Point(715, 418);
-            this.numericUpDown9.Maximum = new decimal(new int[] {
-            12,
+            this.nudInvestigation.Location = new System.Drawing.Point(483, 282);
+            this.nudInvestigation.Maximum = new decimal(new int[] {
+            8,
             0,
             0,
             0});
-            this.numericUpDown9.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown9.Name = "numericUpDown9";
-            this.numericUpDown9.Size = new System.Drawing.Size(55, 22);
-            this.numericUpDown9.TabIndex = 78;
-            this.numericUpDown9.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.nudInvestigation.Name = "nudInvestigation";
+            this.nudInvestigation.Size = new System.Drawing.Size(55, 22);
+            this.nudInvestigation.TabIndex = 78;
             // 
-            // numericUpDown10
+            // nudIntimidation
             // 
-            this.numericUpDown10.Location = new System.Drawing.Point(715, 390);
-            this.numericUpDown10.Maximum = new decimal(new int[] {
-            12,
+            this.nudIntimidation.Location = new System.Drawing.Point(483, 254);
+            this.nudIntimidation.Maximum = new decimal(new int[] {
+            8,
             0,
             0,
             0});
-            this.numericUpDown10.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown10.Name = "numericUpDown10";
-            this.numericUpDown10.Size = new System.Drawing.Size(55, 22);
-            this.numericUpDown10.TabIndex = 77;
-            this.numericUpDown10.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.nudIntimidation.Name = "nudIntimidation";
+            this.nudIntimidation.Size = new System.Drawing.Size(55, 22);
+            this.nudIntimidation.TabIndex = 77;
             // 
-            // numericUpDown11
+            // nudInsight
             // 
-            this.numericUpDown11.Location = new System.Drawing.Point(715, 362);
-            this.numericUpDown11.Maximum = new decimal(new int[] {
-            12,
+            this.nudInsight.Location = new System.Drawing.Point(483, 226);
+            this.nudInsight.Maximum = new decimal(new int[] {
+            8,
             0,
             0,
             0});
-            this.numericUpDown11.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown11.Name = "numericUpDown11";
-            this.numericUpDown11.Size = new System.Drawing.Size(55, 22);
-            this.numericUpDown11.TabIndex = 76;
-            this.numericUpDown11.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.nudInsight.Name = "nudInsight";
+            this.nudInsight.Size = new System.Drawing.Size(55, 22);
+            this.nudInsight.TabIndex = 76;
             // 
-            // numericUpDown12
+            // nudDeception
             // 
-            this.numericUpDown12.Location = new System.Drawing.Point(715, 334);
-            this.numericUpDown12.Maximum = new decimal(new int[] {
-            12,
+            this.nudDeception.Location = new System.Drawing.Point(483, 198);
+            this.nudDeception.Maximum = new decimal(new int[] {
+            8,
             0,
             0,
             0});
-            this.numericUpDown12.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown12.Name = "numericUpDown12";
-            this.numericUpDown12.Size = new System.Drawing.Size(55, 22);
-            this.numericUpDown12.TabIndex = 75;
-            this.numericUpDown12.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.nudDeception.Name = "nudDeception";
+            this.nudDeception.Size = new System.Drawing.Size(55, 22);
+            this.nudDeception.TabIndex = 75;
             // 
-            // numericUpDown13
+            // nudWeaponSkill
             // 
-            this.numericUpDown13.Location = new System.Drawing.Point(715, 306);
-            this.numericUpDown13.Maximum = new decimal(new int[] {
-            12,
+            this.nudWeaponSkill.Location = new System.Drawing.Point(655, 311);
+            this.nudWeaponSkill.Maximum = new decimal(new int[] {
+            8,
             0,
             0,
             0});
-            this.numericUpDown13.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown13.Name = "numericUpDown13";
-            this.numericUpDown13.Size = new System.Drawing.Size(55, 22);
-            this.numericUpDown13.TabIndex = 74;
-            this.numericUpDown13.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.nudWeaponSkill.Name = "nudWeaponSkill";
+            this.nudWeaponSkill.Size = new System.Drawing.Size(55, 22);
+            this.nudWeaponSkill.TabIndex = 74;
             // 
-            // numericUpDown14
+            // nudTech
             // 
-            this.numericUpDown14.Location = new System.Drawing.Point(715, 278);
-            this.numericUpDown14.Maximum = new decimal(new int[] {
-            12,
+            this.nudTech.Location = new System.Drawing.Point(655, 283);
+            this.nudTech.Maximum = new decimal(new int[] {
+            8,
             0,
             0,
             0});
-            this.numericUpDown14.Minimum = new decimal(new int[] {
-            1,
+            this.nudTech.Name = "nudTech";
+            this.nudTech.Size = new System.Drawing.Size(55, 22);
+            this.nudTech.TabIndex = 73;
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Location = new System.Drawing.Point(383, 170);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(60, 17);
+            this.label45.TabIndex = 94;
+            this.label45.Text = "Cunning";
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(383, 142);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(84, 17);
+            this.label46.TabIndex = 93;
+            this.label46.Text = "Ballistic Skill";
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Location = new System.Drawing.Point(383, 114);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(77, 17);
+            this.label47.TabIndex = 92;
+            this.label47.Text = "Awareness";
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Location = new System.Drawing.Point(383, 86);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(61, 17);
+            this.label48.TabIndex = 91;
+            this.label48.Text = "Athletics";
+            // 
+            // nudCunning
+            // 
+            this.nudCunning.Location = new System.Drawing.Point(483, 170);
+            this.nudCunning.Maximum = new decimal(new int[] {
+            8,
             0,
             0,
             0});
-            this.numericUpDown14.Name = "numericUpDown14";
-            this.numericUpDown14.Size = new System.Drawing.Size(55, 22);
-            this.numericUpDown14.TabIndex = 73;
-            this.numericUpDown14.Value = new decimal(new int[] {
-            1,
+            this.nudCunning.Name = "nudCunning";
+            this.nudCunning.Size = new System.Drawing.Size(55, 22);
+            this.nudCunning.TabIndex = 90;
+            // 
+            // nudBallisticSkill
+            // 
+            this.nudBallisticSkill.Location = new System.Drawing.Point(483, 142);
+            this.nudBallisticSkill.Maximum = new decimal(new int[] {
+            8,
             0,
             0,
             0});
+            this.nudBallisticSkill.Name = "nudBallisticSkill";
+            this.nudBallisticSkill.Size = new System.Drawing.Size(55, 22);
+            this.nudBallisticSkill.TabIndex = 89;
+            // 
+            // nudAwareness
+            // 
+            this.nudAwareness.Location = new System.Drawing.Point(483, 114);
+            this.nudAwareness.Maximum = new decimal(new int[] {
+            8,
+            0,
+            0,
+            0});
+            this.nudAwareness.Name = "nudAwareness";
+            this.nudAwareness.Size = new System.Drawing.Size(55, 22);
+            this.nudAwareness.TabIndex = 88;
+            // 
+            // nudAthletics
+            // 
+            this.nudAthletics.Location = new System.Drawing.Point(483, 86);
+            this.nudAthletics.Maximum = new decimal(new int[] {
+            8,
+            0,
+            0,
+            0});
+            this.nudAthletics.Name = "nudAthletics";
+            this.nudAthletics.Size = new System.Drawing.Size(55, 22);
+            this.nudAthletics.TabIndex = 87;
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label49.Location = new System.Drawing.Point(12, 234);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(68, 17);
+            this.label49.TabIndex = 95;
+            this.label49.Text = "Attributes";
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label50.Location = new System.Drawing.Point(383, 60);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(40, 17);
+            this.label50.TabIndex = 96;
+            this.label50.Text = "Skills";
             // 
             // WnGMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(782, 553);
+            this.Controls.Add(this.label50);
+            this.Controls.Add(this.label49);
+            this.Controls.Add(this.label45);
+            this.Controls.Add(this.label46);
+            this.Controls.Add(this.label47);
+            this.Controls.Add(this.label48);
+            this.Controls.Add(this.nudCunning);
+            this.Controls.Add(this.nudBallisticSkill);
+            this.Controls.Add(this.nudAwareness);
+            this.Controls.Add(this.nudAthletics);
             this.Controls.Add(this.label38);
             this.Controls.Add(this.label39);
             this.Controls.Add(this.label40);
@@ -1217,13 +1205,13 @@
             this.Controls.Add(this.label42);
             this.Controls.Add(this.label43);
             this.Controls.Add(this.label44);
-            this.Controls.Add(this.numericUpDown8);
-            this.Controls.Add(this.numericUpDown9);
-            this.Controls.Add(this.numericUpDown10);
-            this.Controls.Add(this.numericUpDown11);
-            this.Controls.Add(this.numericUpDown12);
-            this.Controls.Add(this.numericUpDown13);
-            this.Controls.Add(this.numericUpDown14);
+            this.Controls.Add(this.nudLeadership);
+            this.Controls.Add(this.nudInvestigation);
+            this.Controls.Add(this.nudIntimidation);
+            this.Controls.Add(this.nudInsight);
+            this.Controls.Add(this.nudDeception);
+            this.Controls.Add(this.nudWeaponSkill);
+            this.Controls.Add(this.nudTech);
             this.Controls.Add(this.label31);
             this.Controls.Add(this.label32);
             this.Controls.Add(this.label33);
@@ -1231,13 +1219,13 @@
             this.Controls.Add(this.label35);
             this.Controls.Add(this.label36);
             this.Controls.Add(this.label37);
-            this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.numericUpDown2);
-            this.Controls.Add(this.numericUpDown3);
-            this.Controls.Add(this.numericUpDown4);
-            this.Controls.Add(this.numericUpDown5);
-            this.Controls.Add(this.numericUpDown6);
-            this.Controls.Add(this.numericUpDown7);
+            this.Controls.Add(this.nudSurvival);
+            this.Controls.Add(this.nudStealth);
+            this.Controls.Add(this.nudScholar);
+            this.Controls.Add(this.nudPsychicMastery);
+            this.Controls.Add(this.nudPilot);
+            this.Controls.Add(this.nudPersuasion);
+            this.Controls.Add(this.nudMedicae);
             this.Controls.Add(this.nudAssets);
             this.Controls.Add(this.label30);
             this.Controls.Add(this.txtResolve);
@@ -1305,20 +1293,24 @@
             ((System.ComponentModel.ISupportInitialize)(this.nudFellowship)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudInitiative)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudAssets)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudSurvival)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudStealth)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudScholar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPsychicMastery)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPilot)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPersuasion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudMedicae)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudLeadership)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudInvestigation)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudIntimidation)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudInsight)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudDeception)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudWeaponSkill)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudTech)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCunning)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudBallisticSkill)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudAwareness)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudAthletics)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1391,13 +1383,13 @@
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
-        private System.Windows.Forms.NumericUpDown numericUpDown4;
-        private System.Windows.Forms.NumericUpDown numericUpDown5;
-        private System.Windows.Forms.NumericUpDown numericUpDown6;
-        private System.Windows.Forms.NumericUpDown numericUpDown7;
+        private System.Windows.Forms.NumericUpDown nudSurvival;
+        private System.Windows.Forms.NumericUpDown nudStealth;
+        private System.Windows.Forms.NumericUpDown nudScholar;
+        private System.Windows.Forms.NumericUpDown nudPsychicMastery;
+        private System.Windows.Forms.NumericUpDown nudPilot;
+        private System.Windows.Forms.NumericUpDown nudPersuasion;
+        private System.Windows.Forms.NumericUpDown nudMedicae;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label label40;
@@ -1405,13 +1397,23 @@
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.NumericUpDown numericUpDown8;
-        private System.Windows.Forms.NumericUpDown numericUpDown9;
-        private System.Windows.Forms.NumericUpDown numericUpDown10;
-        private System.Windows.Forms.NumericUpDown numericUpDown11;
-        private System.Windows.Forms.NumericUpDown numericUpDown12;
-        private System.Windows.Forms.NumericUpDown numericUpDown13;
-        private System.Windows.Forms.NumericUpDown numericUpDown14;
+        private System.Windows.Forms.NumericUpDown nudLeadership;
+        private System.Windows.Forms.NumericUpDown nudInvestigation;
+        private System.Windows.Forms.NumericUpDown nudIntimidation;
+        private System.Windows.Forms.NumericUpDown nudInsight;
+        private System.Windows.Forms.NumericUpDown nudDeception;
+        private System.Windows.Forms.NumericUpDown nudWeaponSkill;
+        private System.Windows.Forms.NumericUpDown nudTech;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.NumericUpDown nudCunning;
+        private System.Windows.Forms.NumericUpDown nudBallisticSkill;
+        private System.Windows.Forms.NumericUpDown nudAwareness;
+        private System.Windows.Forms.NumericUpDown nudAthletics;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.Label label50;
     }
 }
 
